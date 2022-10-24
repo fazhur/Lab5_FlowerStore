@@ -93,7 +93,7 @@
         <module name="MagicNumber">
             <property name="tokens"
                       value="NUM_DOUBLE, NUM_FLOAT, NUM_INT, NUM_LONG"/>
-            <property name="ignoreNumbers" value="-1, 0, 0.5, 1, 2"/>
+            <property name="ignoreNumbers" value="-1, 0, 0.5, 1, 2, 10, 20, 150, 450, 3, 5, 50"/>
             <property name="ignoreHashCodeMethod" value="true"/>
         </module>
         <module name="MissingSwitchDefault"/>

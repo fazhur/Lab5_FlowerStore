@@ -31,3 +31,4 @@ public class FlowerTest {
         Assertions.assertEquals("#FF0000", flower.getColor());
     }
 }
+
