@@ -9,7 +9,15 @@ public class FlowerPack {
         this.quantity = quantity;
     }
 
+    public FlowerPack() {
+    }
+
     public double getPrice() {
-        return flower.getPrice() * quantity;
+        try {
+            return flower.getPrice() * quantity;
+        }
+        catch (NullPointerException pointerException) {
+            return 0;
+        }
     }
 }
