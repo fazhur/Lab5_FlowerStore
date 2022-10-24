@@ -26,9 +26,9 @@ public class GroupTest {
         bucket.addPack(new FlowerPack(flower, 10));
         bucket.addPack(new FlowerPack(flower, 5));
         Assertions.assertEquals(150, bucket.getPrice());
-        Flower flower_one = new Flower();
-        flower_one.setPrice(150);
-        bucket.addPack(new FlowerPack(flower_one, 2));
+        Flower flowerOne = new Flower();
+        flowerOne.setPrice(150);
+        bucket.addPack(new FlowerPack(flowerOne, 2));
         Assertions.assertEquals(450, bucket.getPrice());
     }
 
@@ -41,14 +41,14 @@ public class GroupTest {
         bucket.addPack(new FlowerPack(flower, 10));
         store.addBucket(bucket);
         bucket = new FlowerBucket();
-        Flower flower_one = new Flower();
-        flower_one.setPrice(20);
-        bucket.addPack(new FlowerPack(flower_one, 3));
+        Flower flowerOne = new Flower();
+        flowerOne.setPrice(20);
+        bucket.addPack(new FlowerPack(flowerOne, 3));
         store.addBucket(bucket);
         Assertions.assertTrue(store.searchBucket(bucket));
         bucket = new FlowerBucket();
-        Flower flower_two = new Flower();
-        bucket.addPack(new FlowerPack(flower_two, 1));
+        Flower flowerTwo = new Flower();
+        bucket.addPack(new FlowerPack(flowerTwo, 1));
         Assertions.assertFalse(store.searchBucket(bucket));
     }
 }
