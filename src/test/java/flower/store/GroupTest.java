@@ -9,7 +9,7 @@ public class GroupTest {
     private Store store;
 
     @Test
-    public void testPack(){
+    public void testPack() {
         pack = new FlowerPack();
         Assertions.assertEquals(0, pack.getPrice());
         Flower flower = new Flower();
@@ -19,7 +19,7 @@ public class GroupTest {
     }
 
     @Test
-    public void testBucket(){
+    public void testBucket() {
         bucket = new FlowerBucket();
         Flower flower = new Flower();
         flower.setPrice(10);
@@ -33,7 +33,7 @@ public class GroupTest {
     }
 
     @Test
-    public void testStore(){
+    public void testStore() {
         store = new Store();
         bucket = new FlowerBucket();
         Flower flower = new Flower();
